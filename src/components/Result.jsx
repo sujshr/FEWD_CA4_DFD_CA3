@@ -18,6 +18,18 @@ function Result(props) {
     setTextColor(theme === "light" ? "blue" : "white");
   }, [theme]);
 
+// state to maintain feedback 
+  const [feedback, setFeedback] = useState("");
+
+  useEffect(() => {
+    setFeedback(
+      props.score > 2
+        ? props.score === 5
+          ? "100%!!! You nailed it!"
+          : "Great Score!!!"
+        : "You can do better!!"
+    );
+  }, [props.score]);
   return (
     <div style={resultCss} id="resultDiv" className={`${theme} ${textColor}`}>
       <h2>CHECK OUT THE RESULTS!!</h2>
@@ -31,7 +43,8 @@ function Result(props) {
         The percentage:{" "}
         <span className="yellow">{(props.score / props.total) * 100}%</span>
       </p>
-      <button onClick={props.restart}>Play Again</button>
+      <p className="yellow">{feedback}</p>
+      <button onClick={props.restart}>Retake Quiz</button>
     </div>
   );
 }
