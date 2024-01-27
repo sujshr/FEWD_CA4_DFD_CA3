@@ -21,7 +21,7 @@
   position: fixed;
   height: 80vh;
   width: 90vw;
-  top: 10vh;
+  top: 12.5vh;
   left: 5vw;
 }
 
@@ -70,8 +70,8 @@ button:hover {
   height: 1.5rem;
   background-color: #475ede;
   position: fixed;
-  top: 2.5vh;
-  right: 5vw;
+  top: 5vh;
+  right: 10vw;
   border-radius: 34px;
 }
 
@@ -122,6 +122,14 @@ input:checked + #slider {
   background-color: rgb(67, 67, 67);
 }
 
+/* positioning the logo  */
+
+#logo {
+  height: 9vh;
+  position: fixed;
+  top: 2vh;
+  left: 10vw;
+}
 /* media query  */
 @media (min-width: 1000px) {
   #app {
@@ -129,8 +137,9 @@ input:checked + #slider {
     left: 15vw;
   }
   #toggleButton {
-    position: fixed;
-    top: 2.5vh;
-    right: 15vw;
+    right: 20vw;
   }
+  #logo {
+  left: 20vw;
+}
 }
