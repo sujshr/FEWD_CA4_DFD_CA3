@@ -124,9 +124,23 @@ export default function QuestionBox(props) {
           })}
         </div>
 
-        <button id="highlightButton" onClick={highlight}>
-          {questionColor === "red" ? "Remove Highlight" : "Highlight Question"}
-        </button>
+        <div id="buttonDiv">
+          <button
+            id="highlightButton"
+            onClick={() => {
+              setHighligher("red");
+            }}
+          >
+            Highlight Question
+          </button>
+          <button
+            onClick={() => {
+              setHighligher(theme === "light" ? "blue" : "white");
+            }}
+          >
+            Remove Highlight
+          </button>
+        </div>
       </div>
 
       <Result

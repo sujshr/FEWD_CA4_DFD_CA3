@@ -20,9 +20,6 @@
 #container {
   box-shadow: none;
 }
-#question {
-  margin-bottom: 10%;
-}
 
 #options {
   display: grid;
@@ -36,8 +33,14 @@
   font-size: 1rem;
 }
 
+button {
+  margin: 0.5rem;
+}
 @media (max-width: 600px) {
   #options {
     grid-template-columns: 1fr;
+  }
+  #container {
+    padding: 2.5vh 1rem;
   }
 }
