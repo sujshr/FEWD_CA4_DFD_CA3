@@ -7,16 +7,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media (pointer: coarse) {
-  .option:hover {
-    background: rgba(0, 169, 191, 0.543);
-    transform: translateX(0.75px) translateY(-0.75px);
-    box-shadow: 1px 1px 10px rgba(79, 79, 79, 0.267);
-  }
-}
-
 @media (pointer: fine) {
   .option:hover {
+    background: rgba(0, 169, 191, 0.543);
     transform: translateX(0.75px) translateY(-0.75px);
     box-shadow: 1px 1px 10px rgba(79, 79, 79, 0.267);
   }
