@@ -36,4 +36,4 @@ function Result(props) {
   );
 }
 
-export default React.memo(Result);
+export default Result;
