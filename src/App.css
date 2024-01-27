@@ -73,7 +73,6 @@ button:hover {
   top: 5vh;
   right: 10vw;
   border-radius: 34px;
-  cursor: pointer;
 }
 
 input {
@@ -85,6 +84,7 @@ input {
   border-radius: 34px;
   height: 100%;
   width: 100%;
+  cursor: pointer;
 }
 
 #slider {
