@@ -32,9 +32,9 @@ const questions = [
       {
         id: 0,
         text: "Pair of current state and function updating it",
-        isCorrect: false,
+        isCorrect: true,
       },
-      { id: 1, text: "Current State", isCorrect: true },
+      { id: 1, text: "Current State", isCorrect: false },
       { id: 2, text: "Function updating the current state", isCorrect: false },
       { id: 3, text: "UseState returns nothing", isCorrect: false },
     ],
