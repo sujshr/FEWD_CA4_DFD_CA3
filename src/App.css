@@ -105,7 +105,7 @@ input {
   width: 1.25rem;
   top: 0.125rem;
   background-color: white;
-  background-image: url("./public/light.png");
+  background-image: url("./components/assets/light.png");
   background-size: contain;
   z-index: 10;
   border-radius: 50%;
@@ -115,7 +115,7 @@ input {
 input:checked + #slider::before {
   transform: translateX(25px);
   background-color: black;
-  background-image: url("./public/dark.png");
+  background-image: url("./components/assets/dark.png");
 }
 
 input:checked + #slider {
