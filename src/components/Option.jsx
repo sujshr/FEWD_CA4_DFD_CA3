@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import './Option.css'
+import { Theme } from "../App";
 
 export default function Option(props) {
 
+  const theme = useContext(Theme);
+  const style = {
+    color: theme === "light"? "black":"white",
+  }
   return (
-    <button className="option" onClick={props.click_handler} data-id={props.id}>
+    <div style={style} className="option" onClick={props.click_handler} data-id={props.id}>
       {props.option.text}
-    </button>
+    </div>
   );
 }
