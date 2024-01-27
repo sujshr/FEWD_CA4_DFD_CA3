@@ -73,6 +73,7 @@ button:hover {
   top: 5vh;
   right: 10vw;
   border-radius: 34px;
+  cursor: pointer;
 }
 
 input {
@@ -140,6 +141,6 @@ input:checked + #slider {
     right: 20vw;
   }
   #logo {
-  left: 20vw;
-}
+    left: 20vw;
+  }
 }
